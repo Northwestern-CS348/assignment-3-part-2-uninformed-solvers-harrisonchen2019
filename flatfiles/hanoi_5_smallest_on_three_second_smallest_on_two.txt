@@ -33,8 +33,6 @@ fact: (larger disk2 disk1)
 fact: (larger disk3 disk2)
 fact: (larger disk4 disk3)
 fact: (larger disk5 disk4)
-fact: (movable disk1 peg3 peg1)
-fact: (movable disk2 peg2 peg1)
 
 rule: ((larger ?a ?b) (larger ?b ?c)) -> (larger ?a ?c)
 rule: ((on ?diskA ?pegA) (top ?diskA ?pegA) (on ?diskB ?pegB) (top ?diskB ?pegB) (larger ?diskB ?diskA)) -> (movable ?diskA ?pegA ?pegB)

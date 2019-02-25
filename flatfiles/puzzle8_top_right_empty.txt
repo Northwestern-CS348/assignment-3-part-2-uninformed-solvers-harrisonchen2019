@@ -27,8 +27,6 @@ fact: (position piece5 pos1 pos1)
 fact: (position piece6 pos1 pos2)
 fact: (position piece7 pos1 pos3)
 fact: (position piece8 pos3 pos2)
-fact: (movable tile4 pos2 pos1 pos3 pos1)
-fact: (movable tile8 pos3 pos2 pos3 pos1)
 
 rule: ((position ?pieceA ?x 2) (position ?pieceB ?x ?y)) -> (adj ?pieceA ?pieceB)
 rule: ((position ?pieceA 2 ?y) (position ?pieceB ?x ?y)) -> (adj ?pieceA ?pieceB)
