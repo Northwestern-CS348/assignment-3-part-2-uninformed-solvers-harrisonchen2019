@@ -77,7 +77,6 @@ class KBTest(unittest.TestCase):
         ]
         th.setWinningCondition(required, 'hanoi_all_forbidden.txt')
         self.assertFalse(th.isWon())
-
         movables = th.getMovables()
         self.assertEqual(th.getGameState(), ((1,2,3),(),()))
         th.makeMove(movables[0])
