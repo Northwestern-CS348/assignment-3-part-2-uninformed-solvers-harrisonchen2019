@@ -1,0 +1,218 @@
+TESTS WITH ERRORS 
+test07_GM_8Puzzle_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 166, in test07_GM_8Puzzle_03
+    move1 = movables[0]
+TypeError: 'bool' object is not subscriptable
+
+test08_GM_8Puzzle_04 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 194, in test08_GM_8Puzzle_04
+    move1 = movables[0]
+TypeError: 'bool' object is not subscriptable
+
+test15_DFS_8Puzzle_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 333, in test15_DFS_8Puzzle_01
+    [20, ((-1, 1, 4), (5, 2, 3), (6, 7, 8))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 52, in runPlayXSteps
+    results = self.pool.apply_async(self.playXSteps, [solver, plays]).get(timeout)
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 683, in get
+    raise self._value
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 27, in playXSteps
+    solver.solveOneStep()
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 70, in solveOneStep
+    self.gm.reverseMove(self.currentState.requiredMovable)  # move up to parent
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_game_masters.py", line 239, in reverseMove
+    pred = movable_statement.predicate
+AttributeError: 'NoneType' object has no attribute 'predicate'
+
+test16_DFS_8Puzzle_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 352, in test16_DFS_8Puzzle_02
+    [30, ((8, 1, -1), (7, 2, 3), (6, 5, 4))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 52, in runPlayXSteps
+    results = self.pool.apply_async(self.playXSteps, [solver, plays]).get(timeout)
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 683, in get
+    raise self._value
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 27, in playXSteps
+    solver.solveOneStep()
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 70, in solveOneStep
+    self.gm.reverseMove(self.currentState.requiredMovable)  # move up to parent
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_game_masters.py", line 239, in reverseMove
+    pred = movable_statement.predicate
+AttributeError: 'NoneType' object has no attribute 'predicate'
+
+test17_DFS_8Puzzle_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 371, in test17_DFS_8Puzzle_03
+    [8, ((8, 3, 4), (2, -1, 1), (7, 6, 5))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 52, in runPlayXSteps
+    results = self.pool.apply_async(self.playXSteps, [solver, plays]).get(timeout)
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 683, in get
+    raise self._value
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 27, in playXSteps
+    solver.solveOneStep()
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 70, in solveOneStep
+    self.gm.reverseMove(self.currentState.requiredMovable)  # move up to parent
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_game_masters.py", line 239, in reverseMove
+    pred = movable_statement.predicate
+AttributeError: 'NoneType' object has no attribute 'predicate'
+
+-------------------------------
+TESTS FAILED  
+test05_GM_8Puzzle_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 136, in test05_GM_8Puzzle_01
+    self.assertTrue(p8.isWon())
+AssertionError: False is not true
+
+test09_DFS_Hanoi_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 227, in test09_DFS_Hanoi_01
+    [14, ((), (), (1, 2, 3))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((2,), (2,), (1, 3)) != ((), (), (1, 2, 3))
+
+First differing element 0:
+(2,)
+()
+
+- ((2,), (2,), (1, 3))
+?   --    --
+
++ ((), (), (1, 2, 3))
+?              +++
+
+
+test10_DFS_Hanoi_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 246, in test10_DFS_Hanoi_02
+    [20, ((2,5,), (4,), (1, 3))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((4, 5), (1, 2), (2, 3)) != ((5,), (4,), (1, 2, 3))
+
+First differing element 0:
+(4, 5)
+(5,)
+
+- ((4, 5), (1, 2), (2, 3))
++ ((5,), (4,), (1, 2, 3))
+
+test12_BFS_Hanoi_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 278, in test12_BFS_Hanoi_01
+    [22, ((2,), (3,), (1,))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((1, 2, 3), (), ()) != ((), (3,), (1, 2))
+
+First differing element 0:
+(1, 2, 3)
+()
+
+- ((1, 2, 3), (), ())
++ ((), (3,), (1, 2))
+
+test13_BFS_Hanoi_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 296, in test13_BFS_Hanoi_02
+    [23, ((5,), (4,), (1, 2, 3))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((3, 4, 5), (2,), (1,)) != ((2, 3, 4, 5), (), (1,))
+
+First differing element 0:
+(3, 4, 5)
+(2, 3, 4, 5)
+
+- ((3, 4, 5), (2,), (1,))
+?              --
+
++ ((2, 3, 4, 5), (), (1,))
+?   +++
+
+
+test14_BFS_Hanoi_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 314, in test14_BFS_Hanoi_03
+    [23, ((1, 4, 5), (), (2, 3))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((3, 4, 5), (), (1, 2)) != ((3, 4, 5), (1, 2), ())
+
+First differing element 1:
+()
+(1, 2)
+
+- ((3, 4, 5), (), (1, 2))
+?             ----
+
++ ((3, 4, 5), (1, 2), ())
+?                   +++ +
+
+
+test18_BFS_8Puzzle_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 390, in test18_BFS_8Puzzle_01
+    [21, ((6, 5, 4), (1, -1, 8), (7, 3, 2))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((5, 4, -1), (6, 1, 8), (7, 3, 2)) != ((5, 1, 4), (6, -1, 8), (7, 3, 2))
+
+First differing element 0:
+(5, 4, -1)
+(5, 1, 4)
+
+- ((5, 4, -1), (6, 1, 8), (7, 3, 2))
+?       ----
+
++ ((5, 1, 4), (6, -1, 8), (7, 3, 2))
+?      +++        +
+
+
+test19_BFS_8Puzzle_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 409, in test19_BFS_8Puzzle_02
+    [6, ((5, 4, 8), (6, 1, 2), (7, 3, -1))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((5, 4, -1), (6, 1, 8), (7, 3, 2)) != ((5, 4, 8), (6, 1, -1), (7, 3, 2))
+
+First differing element 0:
+(5, 4, -1)
+(5, 4, 8)
+
+- ((5, 4, -1), (6, 1, 8), (7, 3, 2))
++ ((5, 4, 8), (6, 1, -1), (7, 3, 2))
+
+test20_BFS_8Puzzle_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 428, in test20_BFS_8Puzzle_03
+    [7, ((1, 2, -1), (8, 4, 3), (7, 6, 5))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((1, 2, 3), (8, -1, 4), (7, 6, 5)) != ((-1, 1, 3), (8, 2, 4), (7, 6, 5))
+
+First differing element 0:
+(1, 2, 3)
+(-1, 1, 3)
+
+- ((1, 2, 3), (8, -1, 4), (7, 6, 5))
+?      ^          ^^
+
++ ((-1, 1, 3), (8, 2, 4), (7, 6, 5))
+?   +   ^          ^
+
+
+-------------------------------
+TESTS SKIPPED 
+-------------------------------
